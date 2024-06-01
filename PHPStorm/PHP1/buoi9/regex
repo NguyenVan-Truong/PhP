@@ -1,0 +1,17 @@
+Số điện thoại Việt Nam
+'/^(0|\+84)(3[2-9]|5[2689]|7[06789]|8[1-689]|9[0-9])[0-9]{7}$/'
+
+Chuỗi chỉ là string
+'/^[a-zA-Z]+$/'
+
+Chuỗi số thập phân
+'/^\d+(\.\d+)?$/'
+
+Kiểm tra string là mật khẩu mạnh
++ có tối thiểu 8 ký tự
++ có ít nhất một ký tự viết hoa (A-Z)
++ có ít nhất một ký tự viết thường (a-z)
++ có ít nhất một chữ số (0-9)
++ có ít nhật một ký tự đặc biệt(!@#$%^&)
+
+'/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&]).{8,}$/'

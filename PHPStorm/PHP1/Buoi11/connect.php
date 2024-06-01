@@ -1,0 +1,14 @@
+<?php
+
+$host = "localhost";
+$username = "hocphp1";
+$password = "";
+$dbname = "educational_center";
+
+try{
+    $conn = new PDO("mysql:host=$host;dbname=$dbname",$username,$password);
+    $conn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}catch (PDOException $e){
+    die("Lỗi kết nối cơ sở dữ liệu: ".$e->getMessage());
+}
+?>
